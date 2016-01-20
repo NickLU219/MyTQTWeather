@@ -1,0 +1,22 @@
+ [
+  {
+  "ViewControllerName": "NKForecastViewController",
+  "cnTitle": "预报",
+  "enTitle": "Forecast"
+  },
+  {
+  "ViewControllerName": "NKLifeTableViewController",
+  "cnTitle": "生活",
+  "enTitle": "Life"
+  },
+  {
+  "ViewControllerName": "NKLiveViewController",
+  "cnTitle": "实景",
+  "enTitle": "Live"
+  },
+  {
+  "ViewControllerName": "NKMeTableViewController",
+  "cnTitle": "我",
+  "enTitle": "Me"
+  }
+  ]

@@ -1,0 +1,23 @@
+//
+//  MyTQTWeather.pch
+//  MyTQTWeather
+//
+//  Created by 陆金龙 on 16/1/19.
+//  Copyright © 2016年 Nick. All rights reserved.
+//
+
+#ifndef MyTQTWeather_pch
+#define MyTQTWeather_pch
+
+
+#import "NKCategory.h"
+#import "NKLocationManager.h"
+#import <YYKit/YYKit.h>
+/** Screen Size */
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+/** Screen Size Width */
+#define SCREEN_BOUNDS_WIDTH [UIScreen mainScreen].bounds.size.width
+/** Screen Size Height */
+#define SCREEN_BOUNDS_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#endif /* MyTQTWeather_pch */
