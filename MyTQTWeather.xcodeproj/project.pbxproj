@@ -175,6 +175,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E35291891C4F4A6C00A0B12E /* forecast */ = {
+			isa = PBXGroup;
+			children = (
+				E3A0B6231C4E9A5500A147D7 /* NKCurrentDayInfoView.h */,
+				E3A0B6241C4E9A5500A147D7 /* NKCurrentDayInfoView.m */,
+				E3A0B6291C4E9F1D00A147D7 /* NKDailyOverviewView.h */,
+				E3A0B62A1C4E9F1D00A147D7 /* NKDailyOverviewView.m */,
+				E3A0B62C1C4E9F2E00A147D7 /* NKDailyDetailView.h */,
+				E3A0B62D1C4E9F2E00A147D7 /* NKDailyDetailView.m */,
+				E3A0B62F1C4E9F6C00A147D7 /* NKSuggestionView.h */,
+				E3A0B6301C4E9F6C00A147D7 /* NKSuggestionView.m */,
+			);
+			name = forecast;
+			sourceTree = "<group>";
+		};
 		E3A0B5881C4DE0C100A147D7 = {
 			isa = PBXGroup;
 			children = (
@@ -330,14 +345,7 @@
 				E3A0B61E1C4E961F00A147D7 /* NKVoiceButton.m */,
 				E3A0B6201C4E96D000A147D7 /* NKSharedButton.h */,
 				E3A0B6211C4E96D000A147D7 /* NKSharedButton.m */,
-				E3A0B6231C4E9A5500A147D7 /* NKCurrentDayInfoView.h */,
-				E3A0B6241C4E9A5500A147D7 /* NKCurrentDayInfoView.m */,
-				E3A0B6291C4E9F1D00A147D7 /* NKDailyOverviewView.h */,
-				E3A0B62A1C4E9F1D00A147D7 /* NKDailyOverviewView.m */,
-				E3A0B62C1C4E9F2E00A147D7 /* NKDailyDetailView.h */,
-				E3A0B62D1C4E9F2E00A147D7 /* NKDailyDetailView.m */,
-				E3A0B62F1C4E9F6C00A147D7 /* NKSuggestionView.h */,
-				E3A0B6301C4E9F6C00A147D7 /* NKSuggestionView.m */,
+				E35291891C4F4A6C00A0B12E /* forecast */,
 			);
 			path = View;
 			sourceTree = "<group>";

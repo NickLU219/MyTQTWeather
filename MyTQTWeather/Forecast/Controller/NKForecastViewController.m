@@ -12,6 +12,7 @@
 #import "NKVoiceButton.h"
 #import "NKSharedButton.h"
 
+
 @interface NKForecastViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 /**
  *  backGroundImageView
@@ -25,6 +26,8 @@
  *  cityFrameArray
  */
 @property (nonatomic, copy) NSMutableArray<NKCityForecastFrame *> *cityFrames;
+
+@property (nonatomic, copy) void(^data)(NSArray *data);
 @end
 
 @implementation NKForecastViewController
@@ -44,16 +47,8 @@
 
     self.navigationItem.title = @"+定位中...";
 
-    //
-    [NKLocationManager getUserLocation:^(double lat, double lon, NSString *locName) {
-        NSLog(@"%@",locName);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.navigationItem.title = [NSString stringWithFormat:@"+%@",locName];
-        });
-    }];
-
-
 }
+
 #pragma mark - ConfigUI
 - (void)configNavigationBar {
     //backgroundImageView
@@ -100,6 +95,23 @@
 #pragma mark - UICollectionViewDataSource
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NKCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCell" forIndexPath:indexPath];
+//    self.navigationItem.title = cell.tabelName;
+
+
+    //
+    if (indexPath.item == 0) {
+        [NKLocationManager getUserLocation:^(double lat, double lon, NSString *locName) {
+            NSLog(@"%@",locName);
+            [self getWeatherInfo:[locName substringToIndex:2]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.navigationItem.title = [NSString stringWithFormat:@"+%@",locName];
+            });
+        }];
+    } else {
+        //add CityWeather
+        [self getWeatherInfo:[self.title substringToIndex:self.title.length]];
+        self.navigationItem.title = [self.title substringToIndex:self.title.length];
+    }
 
     return cell;
 }
@@ -109,5 +121,28 @@
 }
 
 
+#pragma mark - get weather info
+- (void)getWeatherInfo:(NSString *)city {
+    NSLog(@"%@",city);
+    NSString *baseURL = @"https://api.heweather.com/x3/weather";
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"city"] = city;
+    params[@"key"] = @"9dd86bf382474b7d87d9c86cfbdf0cf7";
+    [NKNetworkManager GET:baseURL parameters:params success:^(id reponseObject) {
+        __weak typeof(self) weakSelf = self;
+        self.data(reponseObject[0]);
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error.userInfo);
+    }];
+    
+}
 
++ (void)getData:(void (^)(id))data {
+
+    [[self alloc] getData:data];
+}
+- (void)getData:(void (^)(id))data {
+
+    self.data = [data copy];
+}
 @end

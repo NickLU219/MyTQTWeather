@@ -12,6 +12,7 @@
 
 #import "NKCategory.h"
 #import "NKLocationManager.h"
+#import "NKNetworkManager.h"
 #import <YYKit/YYKit.h>
 /** Screen Size */
 #define SCREEN_BOUNDS [UIScreen mainScreen].bounds

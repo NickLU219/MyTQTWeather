@@ -7,9 +7,12 @@
 //
 
 #import "NKCollectionViewCell.h"
+#import "NKForecastViewController.h"
 
 @interface NKCollectionViewCell () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) UITableView *tableView;
+
+@property (nonatomic, copy) void (^name) (NSString *tableName);
 @end
 
 
@@ -18,7 +21,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self configTableView];
-//        self.tableView.contentOffset
+
     }
     return self;
 }
@@ -47,6 +50,12 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableViewCell"];
         cell.backgroundColor = [UIColor redColor];
     }
+    
+    [NKForecastViewController getData:^(id data) {
+
+    }];
+
+
     return cell;
 }
 

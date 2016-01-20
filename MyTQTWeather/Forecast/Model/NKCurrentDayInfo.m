@@ -9,5 +9,7 @@
 #import "NKCurrentDayInfo.h"
 
 @implementation NKCurrentDayInfo
-
+//+ (instancetype)parseDataToCreate:(id)res {
+//    
+//}
 @end

@@ -8,17 +8,24 @@
 
 #import "NKCurrentDayInfoView.h"
 #import "NKCurrentDayInfoFrame.h"
+#import "NKCurrentDayInfo.h"
 
 @implementation NKCurrentDayInfoView
 
-- (instancetype)init {
+- (instancetype)initWithData:(id)data {
     if (self = [super init]) {
-
-        
-
+        [self setUpUI];
 
     }
     return self;
 }
 
++ (instancetype)viewWithData:(id)data {
+    return [[self alloc] initWithData:data];
+}
+
+#pragma mark - setUpUI
+- (void)setUpUI {
+    
+}
 @end

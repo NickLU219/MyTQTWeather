@@ -42,11 +42,16 @@
  */
 @property (nonatomic, copy) NSString *windDir;
 /**
- *  windStrength(e.g.东北)
+ *  windStrength
  */
 @property (nonatomic, copy) NSString *windSc;
 /**
  *  wet
  */
 @property (nonatomic, copy) NSString *hum;
+
+/**
+ *  parseDataToCreate
+ */
++ (instancetype)parseDataToCreate:(id)res;
 @end
