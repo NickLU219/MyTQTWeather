@@ -60,7 +60,9 @@
     [coder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         CLPlacemark *placemark = placemarks.lastObject;
 //        NSLog(@"%@",placemark.addressDictionary);
-        self.save(location.coordinate.latitude, location.coordinate.longitude, placemark.addressDictionary[@"City"]);
+        NSString *oriCityName = placemark.addressDictionary[@"City"];
+        NSString *cityName = [oriCityName substringToIndex:oriCityName.length - 1];
+        self.save(location.coordinate.latitude, location.coordinate.longitude, cityName);
     }];
 
 

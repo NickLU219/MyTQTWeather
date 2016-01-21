@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E30CD9101C4F1C930081C38A /* NKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E30CD90F1C4F1C930081C38A /* NKLocationManager.m */; };
 		E30CD9131C4F1C9A0081C38A /* NKNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E30CD9121C4F1C9A0081C38A /* NKNetworkManager.m */; };
+		E35291E51C4FA39F00A0B12E /* NKTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E35291E41C4FA39F00A0B12E /* NKTitleView.m */; };
 		E3A0B5961C4DE0C100A147D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0B5951C4DE0C100A147D7 /* main.m */; };
 		E3A0B5991C4DE0C100A147D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0B5981C4DE0C100A147D7 /* AppDelegate.m */; };
 		E3A0B59F1C4DE0C100A147D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A0B59D1C4DE0C100A147D7 /* Main.storyboard */; };
@@ -67,6 +68,8 @@
 		E30CD90F1C4F1C930081C38A /* NKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKLocationManager.m; sourceTree = "<group>"; };
 		E30CD9111C4F1C9A0081C38A /* NKNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNetworkManager.h; sourceTree = "<group>"; };
 		E30CD9121C4F1C9A0081C38A /* NKNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNetworkManager.m; sourceTree = "<group>"; };
+		E35291E31C4FA39F00A0B12E /* NKTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTitleView.h; sourceTree = "<group>"; };
+		E35291E41C4FA39F00A0B12E /* NKTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTitleView.m; sourceTree = "<group>"; };
 		E3A0B5911C4DE0C100A147D7 /* MyTQTWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTQTWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A0B5951C4DE0C100A147D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3A0B5971C4DE0C100A147D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 				E3A0B61E1C4E961F00A147D7 /* NKVoiceButton.m */,
 				E3A0B6201C4E96D000A147D7 /* NKSharedButton.h */,
 				E3A0B6211C4E96D000A147D7 /* NKSharedButton.m */,
+				E35291E31C4FA39F00A0B12E /* NKTitleView.h */,
+				E35291E41C4FA39F00A0B12E /* NKTitleView.m */,
 				E35291891C4F4A6C00A0B12E /* forecast */,
 			);
 			path = View;
@@ -684,6 +689,7 @@
 				E3A0B5F11C4DE71100A147D7 /* NKMeTableViewController.m in Sources */,
 				E3A0B5FA1C4DE76A00A147D7 /* NKForecastViewController.m in Sources */,
 				E3A0B6051C4E084800A147D7 /* UIView+Extension.m in Sources */,
+				E35291E51C4FA39F00A0B12E /* NKTitleView.m in Sources */,
 				E3A0B5991C4DE0C100A147D7 /* AppDelegate.m in Sources */,
 				E3A0B6281C4E9C6400A147D7 /* NKCurrentDayInfoFrame.m in Sources */,
 				E3A0B5F71C4DE74F00A147D7 /* NKLifeTableViewController.m in Sources */,

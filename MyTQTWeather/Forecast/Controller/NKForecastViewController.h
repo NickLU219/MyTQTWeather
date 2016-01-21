@@ -18,5 +18,4 @@
  */
 @property (nonatomic, copy) NSString *enTitle;
 
-+ (void)getData:(void (^)(id data))data;
 @end

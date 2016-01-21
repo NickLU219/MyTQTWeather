@@ -14,5 +14,4 @@
  */
 @property (nonatomic, copy) NSString *tabelName;
 
-- (void)getTableName:(void (^) (NSString *tableName))nameBlock;
 @end

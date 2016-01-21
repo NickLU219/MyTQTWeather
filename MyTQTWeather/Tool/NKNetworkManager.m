@@ -16,7 +16,7 @@
 
     [manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
-            success(responseObject[@"HeWeather data service 3.0"]);
+            success(responseObject[@"HeWeather data service 3.0"][0]);
         }
 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
