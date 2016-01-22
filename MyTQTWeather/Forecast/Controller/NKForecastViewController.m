@@ -12,7 +12,7 @@
 #import "NKVoiceButton.h"
 #import "NKSharedButton.h"
 #import "NKTitleView.h"
-
+#import "NKWeather.h"
 
 @interface NKForecastViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 /**
@@ -49,7 +49,7 @@
     [self configCollectionView];
 
 //    self.navigationItem.title = @"+定位中...";
-
+    
 }
 
 #pragma mark - ConfigUI

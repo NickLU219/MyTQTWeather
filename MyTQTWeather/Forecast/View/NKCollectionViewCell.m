@@ -9,10 +9,13 @@
 #import "NKCollectionViewCell.h"
 #import "NKForecastViewController.h"
 #import "MJRefresh.h"
+#import "NKWeather.h"
+
 
 @interface NKCollectionViewCell () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) UITableView *tableView;
-
+/**  <#PS#> */
+@property (nonatomic, strong) NKWeather *weather;
 //@property (nonatomic, strong) MJRefreshHeader *header;
 @end
 
@@ -65,8 +68,7 @@
             //stop refresh
             [self.tableView.mj_header endRefreshing];
 
-            
-
+            self.weather = [NKWeather modelWithJSON:reponseObject];
         } failure:^(NSError *error) {
             NSLog(@"%@",error.userInfo);
         }];

@@ -8,7 +8,6 @@
 
 #import "NKCurrentDayInfoView.h"
 #import "NKCurrentDayInfoFrame.h"
-#import "NKCurrentDayInfo.h"
 
 @implementation NKCurrentDayInfoView
 
