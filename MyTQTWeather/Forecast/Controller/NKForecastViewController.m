@@ -13,6 +13,8 @@
 #import "NKSharedButton.h"
 #import "NKTitleView.h"
 #import "NKWeather.h"
+#import "NKDataManager.h"
+
 
 @interface NKForecastViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 /**
@@ -48,8 +50,6 @@
     //configCollectionView
     [self configCollectionView];
 
-//    self.navigationItem.title = @"+定位中...";
-    
 }
 
 #pragma mark - ConfigUI
@@ -73,6 +73,7 @@
     }
 
     NKTitleView *titleView = [[NKTitleView alloc] initWithTitle:@"定位中..."];
+    [titleView addTarget:self action:@selector(titleViewDidClicked) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = titleView;
     self.titleView = titleView;
     
@@ -98,7 +99,10 @@
     
     [self.view addSubview:collectionView];
 }
-
+#pragma mark - addTarget 
+- (void)titleViewDidClicked {
+    
+}
 #pragma mark - UICollectionViewDataSource
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NKCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCell" forIndexPath:indexPath];
@@ -108,7 +112,8 @@
             cell.tabelName = locName;
             [[NSNotificationCenter defaultCenter] postNotificationName:@"getLocationSuccessfully" object:nil];
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.titleView.text = [NSString stringWithFormat:@"+ %@", locName];
+                self.titleView.titleLabel.text = [NSString stringWithFormat:@"+ %@", locName];
+                cell.tabelName = locName;
             });
         }];
 

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NKTitleView : UILabel
+@interface NKTitleView : UIButton
 - (instancetype)initWithTitle:(NSString *)titleStr;
 @end

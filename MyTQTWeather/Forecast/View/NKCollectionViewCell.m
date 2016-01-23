@@ -10,13 +10,12 @@
 #import "NKForecastViewController.h"
 #import "MJRefresh.h"
 #import "NKWeather.h"
-
+#import "NKDataManager.h"
+#import "NKCurrentDayInfoView.h"
 
 @interface NKCollectionViewCell () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) UITableView *tableView;
-/**  <#PS#> */
-@property (nonatomic, strong) NKWeather *weather;
-//@property (nonatomic, strong) MJRefreshHeader *header;
+
 @end
 
 
@@ -25,7 +24,6 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didGetLocation) name:@"getLocationSuccessfully" object:nil];
-
         [self configTableView];
 //        [self loadWeather:self.tabelName];
     }
@@ -41,6 +39,8 @@
     self.tableView = tableView;
     tableView.backgroundColor = [UIColor clearColor];
     tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+
+
     tableView.tableFooterView = [[UIView alloc] init];
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -48,7 +48,7 @@
     MJRefreshStateHeader *header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
         [self loadWeather:self.tabelName];
     }];
-//    MJRefreshStateHeader *header = [MJRefreshStateHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadWeather:)];
+
     header.stateLabel.textColor = [UIColor colorWithWhite:1 alpha:0.6];
     header.lastUpdatedTimeLabel.textColor = [UIColor colorWithWhite:1 alpha:0.6];
     
@@ -68,7 +68,10 @@
             //stop refresh
             [self.tableView.mj_header endRefreshing];
 
-            self.weather = [NKWeather modelWithJSON:reponseObject];
+            NKWeather *weather = [NKWeather modelWithJSON:reponseObject];
+            [NKDataManager archiveWeather:weather withCity:self.tabelName];
+            NSLog(@"%@",[NKDataManager getAllCityWeathers]);
+            [self.tableView reloadData];
         } failure:^(NSError *error) {
             NSLog(@"%@",error.userInfo);
         }];
@@ -86,6 +89,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tableViewCell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableViewCell"];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    if (indexPath.row == 0) {
+        NKCurrentDayInfoView *view = [[NKCurrentDayInfoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_BOUNDS_WIDTH, 493)];
+        view.weather = [NKDataManager getAllCityWeathers][self.tabelName];
+        [cell.contentView addSubview:view];
+
+    }
+    if (indexPath.row == 1) {
         cell.backgroundColor = [UIColor grayColor];
     }
     
@@ -94,7 +107,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    return 400;
 }
 
 

@@ -13,13 +13,22 @@
 		E30B17521C5201CA002554AC /* NKNow.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17511C5201CA002554AC /* NKNow.m */; };
 		E30B17551C52033E002554AC /* NKSuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17541C52033E002554AC /* NKSuggestion.m */; };
 		E30B17581C523373002554AC /* NKDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17571C523373002554AC /* NKDataManager.m */; };
+		E30B175A1C523DC0002554AC /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17591C523DC0002554AC /* Foundation+Log.m */; };
+		E30B175D1C523FAC002554AC /* NKCityChangeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B175C1C523FAC002554AC /* NKCityChangeTableViewController.m */; };
+		E30B17661C5240A1002554AC /* allcitys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30B175E1C5240A1002554AC /* allcitys.plist */; };
+		E30B17671C5240A1002554AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30B175F1C5240A1002554AC /* Assets.xcassets */; };
+		E30B17681C5240A1002554AC /* hotCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30B17601C5240A1002554AC /* hotCity.plist */; };
+		E30B17691C5240A1002554AC /* hotScenery.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30B17611C5240A1002554AC /* hotScenery.plist */; };
+		E30B176A1C5240A1002554AC /* ripecity.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30B17621C5240A1002554AC /* ripecity.plist */; };
+		E30B176B1C5240A1002554AC /* ripecountry.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30B17631C5240A1002554AC /* ripecountry.plist */; };
+		E30B176C1C5240A1002554AC /* ripeinternatcity.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30B17641C5240A1002554AC /* ripeinternatcity.plist */; };
+		E30B176D1C5240A1002554AC /* ripeprovince.plist in Resources */ = {isa = PBXBuildFile; fileRef = E30B17651C5240A1002554AC /* ripeprovince.plist */; };
 		E30CD9101C4F1C930081C38A /* NKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E30CD90F1C4F1C930081C38A /* NKLocationManager.m */; };
 		E30CD9131C4F1C9A0081C38A /* NKNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E30CD9121C4F1C9A0081C38A /* NKNetworkManager.m */; };
 		E35291E51C4FA39F00A0B12E /* NKTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E35291E41C4FA39F00A0B12E /* NKTitleView.m */; };
 		E3A0B5961C4DE0C100A147D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0B5951C4DE0C100A147D7 /* main.m */; };
 		E3A0B5991C4DE0C100A147D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0B5981C4DE0C100A147D7 /* AppDelegate.m */; };
 		E3A0B59F1C4DE0C100A147D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A0B59D1C4DE0C100A147D7 /* Main.storyboard */; };
-		E3A0B5A11C4DE0C100A147D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A0B5A01C4DE0C100A147D7 /* Assets.xcassets */; };
 		E3A0B5A41C4DE0C100A147D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A0B5A21C4DE0C100A147D7 /* LaunchScreen.storyboard */; };
 		E3A0B5AF1C4DE0C200A147D7 /* MyTQTWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0B5AE1C4DE0C200A147D7 /* MyTQTWeatherTests.m */; };
 		E3A0B5BA1C4DE0C200A147D7 /* MyTQTWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A0B5B91C4DE0C200A147D7 /* MyTQTWeatherUITests.m */; };
@@ -84,6 +93,17 @@
 		E30B17541C52033E002554AC /* NKSuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSuggestion.m; sourceTree = "<group>"; };
 		E30B17561C523373002554AC /* NKDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDataManager.h; sourceTree = "<group>"; };
 		E30B17571C523373002554AC /* NKDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDataManager.m; sourceTree = "<group>"; };
+		E30B17591C523DC0002554AC /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		E30B175B1C523FAC002554AC /* NKCityChangeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCityChangeTableViewController.h; sourceTree = "<group>"; };
+		E30B175C1C523FAC002554AC /* NKCityChangeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCityChangeTableViewController.m; sourceTree = "<group>"; };
+		E30B175E1C5240A1002554AC /* allcitys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = allcitys.plist; sourceTree = "<group>"; };
+		E30B175F1C5240A1002554AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E30B17601C5240A1002554AC /* hotCity.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hotCity.plist; sourceTree = "<group>"; };
+		E30B17611C5240A1002554AC /* hotScenery.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hotScenery.plist; sourceTree = "<group>"; };
+		E30B17621C5240A1002554AC /* ripecity.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ripecity.plist; sourceTree = "<group>"; };
+		E30B17631C5240A1002554AC /* ripecountry.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ripecountry.plist; sourceTree = "<group>"; };
+		E30B17641C5240A1002554AC /* ripeinternatcity.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ripeinternatcity.plist; sourceTree = "<group>"; };
+		E30B17651C5240A1002554AC /* ripeprovince.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ripeprovince.plist; sourceTree = "<group>"; };
 		E30CD90E1C4F1C930081C38A /* NKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKLocationManager.h; sourceTree = "<group>"; };
 		E30CD90F1C4F1C930081C38A /* NKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKLocationManager.m; sourceTree = "<group>"; };
 		E30CD9111C4F1C9A0081C38A /* NKNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNetworkManager.h; sourceTree = "<group>"; };
@@ -95,7 +115,6 @@
 		E3A0B5971C4DE0C100A147D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		E3A0B5981C4DE0C100A147D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		E3A0B59E1C4DE0C100A147D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E3A0B5A01C4DE0C100A147D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E3A0B5A31C4DE0C100A147D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A0B5A51C4DE0C100A147D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3A0B5AA1C4DE0C200A147D7 /* MyTQTWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTQTWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,7 +308,14 @@
 		E3A0B5C91C4DE20E00A147D7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				E3A0B5A01C4DE0C100A147D7 /* Assets.xcassets */,
+				E30B175F1C5240A1002554AC /* Assets.xcassets */,
+				E30B17601C5240A1002554AC /* hotCity.plist */,
+				E30B17611C5240A1002554AC /* hotScenery.plist */,
+				E30B175E1C5240A1002554AC /* allcitys.plist */,
+				E30B17621C5240A1002554AC /* ripecity.plist */,
+				E30B17631C5240A1002554AC /* ripecountry.plist */,
+				E30B17641C5240A1002554AC /* ripeinternatcity.plist */,
+				E30B17651C5240A1002554AC /* ripeprovince.plist */,
 				E3A0B5CA1C4DE20E00A147D7 /* jpg.bundle */,
 			);
 			path = Resource;
@@ -298,6 +324,7 @@
 		E3A0B5CC1C4DE3B900A147D7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E30B17591C523DC0002554AC /* Foundation+Log.m */,
 				E3A0B6071C4E088E00A147D7 /* NKCategory.h */,
 				E3A0B6031C4E084800A147D7 /* UIView+Extension.h */,
 				E3A0B6041C4E084800A147D7 /* UIView+Extension.m */,
@@ -348,6 +375,8 @@
 			children = (
 				E3A0B5F81C4DE76A00A147D7 /* NKForecastViewController.h */,
 				E3A0B5F91C4DE76A00A147D7 /* NKForecastViewController.m */,
+				E30B175B1C523FAC002554AC /* NKCityChangeTableViewController.h */,
+				E30B175C1C523FAC002554AC /* NKCityChangeTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -653,10 +682,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30B17681C5240A1002554AC /* hotCity.plist in Resources */,
+				E30B17661C5240A1002554AC /* allcitys.plist in Resources */,
 				E3A0B5FC1C4DE79500A147D7 /* Controller.json in Resources */,
+				E30B176A1C5240A1002554AC /* ripecity.plist in Resources */,
 				E3A0B5A41C4DE0C100A147D7 /* LaunchScreen.storyboard in Resources */,
-				E3A0B5A11C4DE0C100A147D7 /* Assets.xcassets in Resources */,
+				E30B176B1C5240A1002554AC /* ripecountry.plist in Resources */,
 				E3A0B5CB1C4DE20E00A147D7 /* jpg.bundle in Resources */,
+				E30B176C1C5240A1002554AC /* ripeinternatcity.plist in Resources */,
+				E30B17671C5240A1002554AC /* Assets.xcassets in Resources */,
+				E30B17691C5240A1002554AC /* hotScenery.plist in Resources */,
+				E30B176D1C5240A1002554AC /* ripeprovince.plist in Resources */,
 				E3A0B59F1C4DE0C100A147D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,6 +789,7 @@
 				E3A0B5FF1C4E026300A147D7 /* NKTabBarButtonView.m in Sources */,
 				E3A0B5961C4DE0C100A147D7 /* main.m in Sources */,
 				E3A0B6161C4E705100A147D7 /* NKCollectionViewCell.m in Sources */,
+				E30B175A1C523DC0002554AC /* Foundation+Log.m in Sources */,
 				E3A0B60C1C4E510000A147D7 /* NSDate+NKCompare.m in Sources */,
 				E30B17491C51F944002554AC /* NKBasic.m in Sources */,
 				E3AE74D21C51CDED008E9963 /* NKWeather.m in Sources */,
@@ -764,6 +801,7 @@
 				E3A0B5F41C4DE73A00A147D7 /* NKLiveViewController.m in Sources */,
 				E3A0B6221C4E96D000A147D7 /* NKSharedButton.m in Sources */,
 				E3A0B6021C4E052200A147D7 /* UILabel+NKCreate.m in Sources */,
+				E30B175D1C523FAC002554AC /* NKCityChangeTableViewController.m in Sources */,
 				E3A0B60D1C4E510000A147D7 /* UIImage+NKTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

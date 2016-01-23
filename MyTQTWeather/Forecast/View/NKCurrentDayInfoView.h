@@ -7,44 +7,43 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NKWeather.h"
 
 @interface NKCurrentDayInfoView : UIView
-/**
- *  create with some (id)data
- *
- *  @param data (id)data
- *
- *  @return a currentDayInfoView
- */
-+ (instancetype)viewWithData:(id)data;
 
+
+/**  cellHeight */
+@property (nonatomic) CGFloat cellHeight;
 
 /**
  *  updateTimeLabel
  */
-@property (nonatomic, weak) UILabel *updateLabel;
+@property (nonatomic, strong) UILabel *updateLabel;
 /**
  *  aqiLabel
  */
-@property (nonatomic, weak) UILabel *aqiLabel;
+@property (nonatomic, strong) UILabel *aqiLabel;
 /**
  *  tmperatureLabel
  */
-@property (nonatomic, weak) UILabel *tmpLabel;
+@property (nonatomic, strong) UILabel *tmpLabel;
 /**
  *  condLabel
  */
-@property (nonatomic, weak) UILabel *condLabel;
+@property (nonatomic, strong) UILabel *condLabel;
 /**
  *  bodyFeelLabel
  */
-@property (nonatomic, weak) UILabel *flLabel;
+@property (nonatomic, strong) UILabel *flLabel;
 /**
  *  winDrectionLabel
  */
-@property (nonatomic, weak) UILabel *windLabel;
+@property (nonatomic, strong) UILabel *windLabel;
 /**
  *  wetLabel
  */
-@property (nonatomic, weak) UILabel *humLabel;
+@property (nonatomic, strong) UILabel *humLabel;
+
+/**  weatherData */
+@property (nonatomic, strong) NKWeather *weather;
 @end

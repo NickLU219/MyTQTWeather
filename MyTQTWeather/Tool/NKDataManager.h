@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NKWeather.h"
 
 @interface NKDataManager : NSObject
++ (instancetype)sharedManager;
 
+/**
+ *  获取所有城市的数据
+ */
++ (__kindof NSMutableDictionary<NSString *, NKWeather *> *)getAllCityWeathers;
+/**
+ *  存储一个城市的数据
+ */
++ (void)archiveWeather:(NKWeather *)weather withCity:(NSString *)cityName;
 @end

@@ -11,9 +11,9 @@
 @implementation NKTitleView
 - (instancetype)initWithTitle:(NSString *)titleStr {
     if (self = [super init]) {
-        self.text = [NSString stringWithFormat:@"+ %@",titleStr];
-        self.textColor = [UIColor whiteColor];
-        self.font = [UIFont systemFontOfSize:20];
+        [self setTitle:[NSString stringWithFormat:@"+ %@",titleStr] forState:UIControlStateNormal] ;
+        self.titleLabel.textColor = [UIColor whiteColor];
+        self.titleLabel.font = [UIFont systemFontOfSize:20];
         [self sizeToFit];
         self.backgroundColor = [UIColor clearColor];
     }

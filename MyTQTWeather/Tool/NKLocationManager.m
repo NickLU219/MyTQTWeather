@@ -20,7 +20,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.manager = [CLLocationManager new];
-
+        
         [self.manager requestWhenInUseAuthorization];
         self.manager.delegate = self;
     }
